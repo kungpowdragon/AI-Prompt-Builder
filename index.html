@@ -713,6 +713,22 @@
   .tc-table td { color: var(--muted); }
   .tc-table td strong { color: var(--text); font-weight: 400; }
 
+  .download-btn {
+  display: inline-block;
+  background-color: #ff5e5e;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  }
+
+  .download-btn:hover {
+    background-color: #e04e4e;
+  }
+
   /* Scrollbars */
   ::-webkit-scrollbar { width: 4px; height: 4px; }
   ::-webkit-scrollbar-track { background: transparent; }
@@ -726,7 +742,7 @@
   <!-- ══════════ HEADER ══════════ -->
   <header>
     <div class="header-left">
-      <div class="header-title">Prompt <span>Framework</span> Builder &amp; Reference</div>
+      <div class="header-title"><span>AI </span>Prompt <span>Builder</span> &amp; Reference</div>
       <div class="header-sub">Build prompts live · Reference techniques · Copy anywhere</div>
     </div>
     <div class="header-tabs">
@@ -1118,6 +1134,25 @@
       </div>
 
       <div class="technique-grid">
+
+        <!-- O. Download Full Guide -->
+        <div class="technique-card" id="tech-basic" data-level="beginner" data-keywords="full guide download">
+          <div class="tc-header">
+            <div class="tc-icon">⏬</div>
+            <div class="tc-title">AI Prompt Engineering Cheatsheet</div>
+          </div>
+          <span class="tc-badge badge-beginner">Beginner</span>
+          <p class="tc-desc">Download the full guide.</p>
+          <div class="tc-example">
+            <strong>A practitioner's reference for getting predictable, high-quality outputs from any large language model.</strong>
+          </div>
+
+          <!-- Download button -->
+          <a href="https://ko-fi.com/s/b183777191" class="download-btn" target="_blank" rel="noopener noreferrer">
+            📥 Download Now
+          </a>
+          
+        </div>
 
         <!-- 1. Basic Structure -->
         <div class="technique-card" id="tech-basic" data-level="beginner" data-keywords="basic structure context task format foundation">
